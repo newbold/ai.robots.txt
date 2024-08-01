@@ -8,8 +8,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-          overwrite: true
       - run: |
+          git config --global user.name "GitHubAction[bot]"
+          git config --global user.email "GitHubAction@users.noreply.github.com"
           git rm robots.txt
           git add -A
           git commit -m "removing prior robots.txt file"
