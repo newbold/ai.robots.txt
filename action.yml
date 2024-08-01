@@ -3,5 +3,11 @@ description: 'https://github.com/ai-robots-txt/ai.robots.txt/blob/main/README.md
 runs:
   using: "composite"
   steps:
-  - run: php -f code/action.php
+  - run: |
+      php -f code/action.php
+      git config --global user.name "GitHub Action"
+      git config --global user.email "github-action@neatnik.net"
+      git add -A
+      git commit -m "commit message"
+      git push
     shell: bash
