@@ -1,0 +1,7 @@
+name: 'ai.robots.txt'
+description: 'https://github.com/ai-robots-txt/ai.robots.txt/blob/main/README.md'
+runs:
+  using: "composite"
+  steps:
+  - run: php -f code/action.php
+    shell: bash
