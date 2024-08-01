@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  ai.robots.txt:
+  ai-robots-txt:
     runs-on: ubuntu-latest
     name: ai.robots.txt
     steps:
