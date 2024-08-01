@@ -2,7 +2,7 @@
 
 # Hello from omg.lol! Questions? Email help@omg.lol.
 
-touch('lol');
+touch('lol2');
 
 die('hello from the github action');
 
