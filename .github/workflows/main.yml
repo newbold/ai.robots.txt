@@ -11,6 +11,9 @@ jobs:
           overwrite: true
       - run: |
           git rm robots.txt
+          git add -A
+          git commit -m "removing prior robots.txt file"
+          git push
           php -f code/action.php
           git config --global user.name "GitHubAction[bot]"
           git config --global user.email "GitHubAction@users.noreply.github.com"
