@@ -1,4 +1,4 @@
-name: 'ai.robots.txt'
+name: 'ai-robots-txt'
 description: 'https://github.com/ai-robots-txt/ai.robots.txt/blob/main/README.md'
 runs:
   using: "composite"

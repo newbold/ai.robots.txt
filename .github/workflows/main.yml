@@ -3,8 +3,8 @@ on: [push]
 jobs:
   ai-robots-txt:
     runs-on: ubuntu-latest
-    name: ai.robots.txt
+    name: ai-robots-txt
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
