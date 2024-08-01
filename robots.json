@@ -181,7 +181,7 @@
         "frequency": "No information.",
         "description": "Retrieves data used for You.com web search engine and LLMs."
     },
-    "TestBot": {
+    "TestBot2": {
         "operator": "Testing operator",
         "respect": "Testing respect",
         "function": "Testing function",

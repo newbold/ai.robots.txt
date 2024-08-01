@@ -1,11 +1,21 @@
 <?php
 
-// This script processes updates to the https://github.com/ai-robots-txt/ai.robots.txt repository.
+/*
+
+This script processes updates to the https://github.com/ai-robots-txt/ai.robots.txt repository.
+
+It generates:
+
+  - robots.txt
+  - table-of-bot-metrics.md
+
+*/
 
 $robots = json_decode(file_get_contents('robots.json'), 1);
 
 $robots_txt = null;
 $robots_table = '| Name | Operator | Respects `robots.txt` | Data use | Visit regularity | Description |'."\n";
+$robots_table .= '|-----|----------|-----------------------|----------|------------------|-------------|'."\n";
 
 foreach($robots as $robot => $details) {
   $robots_txt .= 'User-agent: '.$robot."\n";
