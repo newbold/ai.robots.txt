@@ -15,6 +15,7 @@ foreach($robots as $robot => $details) {
 $robots_txt .= 'Disallow: /';
 
 file_put_contents('robots.txt', $robots_txt);
+file_put_contents('robots2.txt', $robots_txt);
 
 
 
