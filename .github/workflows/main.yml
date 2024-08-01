@@ -9,7 +9,7 @@ jobs:
         with:
           fetch-depth: 2
       - run: |
-          rm robots.txt
+          git rm robots.txt
           php -f code/action.php
           git config --global user.name "GitHub Action"
           git config --global user.email "github-action@neatnik.net"
