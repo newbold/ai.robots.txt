@@ -1,10 +1,12 @@
 <?php
 
-# Hello from omg.lol! Questions? Email help@omg.lol.
+// This script processes updates to the https://github.com/ai-robots-txt/ai.robots.txt repository.
 
-touch('lol2');
+$robots = json_decode(file_get_contents('robots.json'), 1);
 
-die('hello from the github action');
+file_put_contents(time(), print_r($robots, 1));
+
+
 
 /*
 // ensure compatibility with files containing unicode characters
